@@ -1,0 +1,26 @@
+.card{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+    background-size: cover;
+    background-color: aqua;
+    height: 125px;
+}
+
+.desc{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 2px 0 2px;
+    box-shadow: 0px 4px 8px black;
+    transition-duration: 0.5s;
+}
+
+.desc:hover{
+    box-shadow: 0px 8px 16px black;
+}
