@@ -10,6 +10,35 @@
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="style.css" />
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+      >
 </head>
 <body>
     <div class="main">
@@ -53,17 +82,112 @@
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
                     <img src="backward_icon.png" />
-                    <img src="forward_icon.png" alt="">
+                    <img src="forward_icon.png" class="hide">
                 </div>
                 <div class="sticky-nav-options">
-                    <button class="badge nav-item">Explore Premium</button>
+                    <button class="badge nav-item hide">Explore Premium</button>
                     <button class="badge nav-item dark"><i class="fa-regular fa-circle-down" style="margin-right: 5px ;"></i>Install App</button>
                     <i class="fa-regular fa-user nav-item"></i>
                 </div>                
             </div>   
-            <div class="cards"></div>      
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+
+                <h2>Trending Now Near You</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card2img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card4img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card4img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+                
+                <h2>Features Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card5img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card6img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
         </div>
-        <div class="music-player">music player</div>
+
+        <div class="music-player">
+            <div class="album">
+                <img src="card2img.jpeg" class="mar"/>
+                <div class="song mar">
+                    <p class="text-title" style="display: block;">Mahiye Jinna Sohna</p>
+                    <p class="text-author" >Darshan Raval</p>
+                </div>
+                <i class="fa-regular fa-heart mar ico"></i>
+                <i class="fa-sharp fa-regular fa-rectangle-wide mar ico"></i>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="player_icon1.png" class="player-control-icon">
+                    <img src="player_icon2.png" class="player-control-icon">
+                    <img src="player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="player_icon4.png" class="player-control-icon">
+                    <img src="player_icon5.png" class="player-control-icon">
+                </div>
+
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1"/>
+                    <span class="tot-time">03:33</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <i class="fa-regular fa-circle-play ic"></i>
+                <i class="fa-sharp fa-light fa-microphone-stand ic"></i>
+                <i class="fa-solid fa-books ic"></i>
+                <i class="fa-sharp fa-solid fa-computer-speaker ic"></i>
+                <i class="fa-sharp fa-solid fa-volume ic" style="margin-right: 10px;"></i>
+                <input type="range" min="0" max="100" class="progress-bar bar ic" step="1" style="margin-right: 20px;"/>
+            </div>
+        </div>
     </div>
 </body>
 </html>
