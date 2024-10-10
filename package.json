@@ -1,0 +1,21 @@
+{
+  "name": "delta-1.0",
+  "version": "1.0.0",
+  "description": "First code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Delta"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Kartik",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.8.0"
+  }
+}
